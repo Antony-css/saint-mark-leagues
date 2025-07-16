@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyAfEeMMgpZr8-1NGeatOe6K4NdG23HPCvI",
+        authDomain: "saint-mark-leagues.firebaseapp.com",
+        projectId: "saint-mark-leagues",
+        storageBucket: "saint-mark-leagues.firebasestorage.app",
+        messagingSenderId: "974377360398",
+        appId: "1:974377360398:web:0b5865d69deff9adb6f05f"
+      };
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>    
+  </body>
+</html>
